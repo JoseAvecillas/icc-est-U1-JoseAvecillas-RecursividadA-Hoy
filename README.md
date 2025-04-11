@@ -38,8 +38,20 @@ Para ejecutar el proyecto:
 
 ```plaintext
 Jose Avecillas
+Hello, World!
+Alcanzar el caso base
+Calculando factorial de:1 * factorial(0 -1)
+Calculando factorial de:2 * factorial(1 -1)
+Calculando factorial de:3 * factorial(2 -1)
+Calculando factorial de:4 * factorial(3 -1)
+Calculando factorial de:5 * factorial(4 -1)
+Resultado:16
 Fibonacci: 5
 Suma de consecutivos hasta 5: 15
+La potencia es: 243
+El resultado es: 3
+El resultado será: 12 11 10 9 8 7 6 5 4 3 2 1
+El reverso es:21
 
 ```
 

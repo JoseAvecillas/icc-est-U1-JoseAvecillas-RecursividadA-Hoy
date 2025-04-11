@@ -5,7 +5,6 @@ public class EjerciciosRecursivos {
             return n;
         }
         return fibonacci(n -1) + fibonacci(n -2);
-
     }
 
     // Metodo que devuelve la suma de los numeros que contiene n para. Donde n= 5 n numero a ser sumado rettorna cada suma para n= 5 retorna 5
@@ -44,12 +43,27 @@ public class EjerciciosRecursivos {
         if (n < 10) {
             return n; 
         }
-    
         int ultimoDigito = n % 10; 
         int restoDelNumero = n / 10; 
-    
         return ultimoDigito + sumaDigitos(restoDelNumero);
     }
 
+    public String numerosImpresos(int n) {
+        if (n <= 0) {
+            return "";
+        }
+        return n + (n == 1 ? "" : " ") + numerosImpresos(n - 1);
+    }
+
+    public int Reverso(int n) {
+        return Reverso(n, 0);
+    }
+
+    private int Reverso(int n, int invertido) {
+        if (n == 0) {
+            return invertido;
+        }
+        return Reverso(n / 10, invertido * 10 + n % 10);
+    }
 }
 
